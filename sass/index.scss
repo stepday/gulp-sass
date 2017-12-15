@@ -1,33 +1,40 @@
 $baseColor:red;
-h5{
-	color:$baseColor;
-	font-size: 14px;
-	i{
-		color:blue;
-		font-size:12px;
-		display:inline-block;
-		transform:rotate(-45deg);
-		-ms-transform:rotate(-45deg);
-		-webkit-transform:rotate(-45deg);
-	}
+h5 {
+    color: $baseColor;
+    font-size: 14px;
+    i {
+        color: blue;
+        font-size: 12px;
+        display: inline-block;
+        transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
 }
-hr{ border: 1px dashed #666;}
-.border-radius{
-	padding: 20px;
-	border:2px solid $baseColor;
-	border-radius: 15px;
-	font-size: 14px;
-	width: 150px;
+
+hr {
+    border: 1px dashed #666;
 }
-.box-shadow{
-	box-shadow: 10px 10px 10px #888;
+
+.border-radius {
+    padding: 20px;
+    border: 2px solid $baseColor;
+    border-radius: 15px;
+    font-size: 14px;
+    width: 150px;
 }
-h4{
-	font-size: 14px;
-	color: #888;
+
+.box-shadow {
+    box-shadow: 10px 10px 10px #888;
 }
-pre{
-	margin: 15px 0 0 0;
+
+h4 {
+    font-size: 14px;
+    color: #888;
+}
+
+pre {
+    margin: 15px 0 0 0;
     padding: 20px;
     border: 0;
     border: 1px dotted #785;
@@ -35,56 +42,140 @@ pre{
     line-height: 1.4;
     font-family: Consolas;
 }
-.pic-box{ 
-	width: 200px;
-	height: 250px;
-	padding: 10px;
-	text-align: center;
-	border:1px solid #BFBFBF;
-	box-shadow: 2px 2px 3px #aaaaaa;
-	margin-left: 20px;
-	display: inline-block;
-	background: #fff;
-	/**旋转**/
-	transform:rotate(8deg);
-	-ms-transform:rotate(8deg);/**IE9**/
-	-moz-transform:rotate(8deg);/** Firefox **/
-	-webkit-transform:rotate(8deg);/** Safari and Chrome **/
-	-o-transform:rotate(8deg);/**Opera**/
-	img{
-		width: 180px;
-		height: 200px;
-	}
-	p{
-		line-height: 30px;
-		font-size: 14px;
-		color: #888;
-	}
-}
-.rotate-fan{
-	/**逆时针旋转**/
-	transform:rotate(-8deg);
-	-ms-transform:rotate(-8deg);/**IE9**/
-	-moz-transform:rotate(-8deg);/** Firefox **/
-	-webkit-transform:rotate(-8deg);/** Safari and Chrome **/
-	-o-transform:rotate(-8deg);/**Opera**/
-	z-index: 10;
+
+.pic-box {
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #BFBFBF;
+    box-shadow: 2px 2px 3px #aaaaaa;
+    margin-left: 20px;
+    display: inline-block;
+    background: #fff;
+    /**旋转**/
+    transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    /**IE9**/
+    -moz-transform: rotate(8deg);
+    /** Firefox **/
+    -webkit-transform: rotate(8deg);
+    /** Safari and Chrome **/
+    -o-transform: rotate(8deg);
+    /**Opera**/
+    img {
+        width: 180px;
+        height: 200px;
+    }
+    p {
+        line-height: 30px;
+        font-size: 14px;
+        color: #888;
+    }
 }
 
-.border-image{
-	border:15px solid transparent;
-	width:250px;
-	padding:10px 20px;
+.rotate-fan {
+    /**逆时针旋转**/
+    transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    /**IE9**/
+    -moz-transform: rotate(-8deg);
+    /** Firefox **/
+    -webkit-transform: rotate(-8deg);
+    /** Safari and Chrome **/
+    -o-transform: rotate(-8deg);
+    /**Opera**/
+    z-index: 10;
 }
+
+.border-image {
+    border: 15px solid transparent;
+    width: 250px;
+    padding: 10px 20px;
+}
+
+
 /**平铺效果**/
-.round{	
-	border-image:url(../]images/border.png) 30 30 round;
-	-webkit-border-image:url(../images/border.png) 30 30 round; /* Safari 5 and older */
-	-o-border-image:url(../images/border.png) 30 30 round; /* Opera */
+
+.round {
+    border-image: url(../images/border.png) 30 30 round;
+    -webkit-border-image: url(../images/border.png) 30 30 round;
+    /* Safari 5 and older */
+    -o-border-image: url(../images/border.png) 30 30 round;
+    /* Opera */
 }
+
+
 /**拉伸效果**/
-.stretch{
-	border-image:url(../]images/border.png) 30 30 stretch;
-	-webkit-border-image:url(../images/border.png) 30 30 stretch; /* Safari 5 and older */
-	-o-border-image:url(../images/border.png) 30 30 stretch; /* Opera */
+
+.stretch {
+    border-image: url(../images/border.png) 30 30 stretch;
+    -webkit-border-image: url(../images/border.png) 30 30 stretch;
+    /* Safari 5 and older */
+    -o-border-image: url(../images/border.png) 30 30 stretch;
+    /* Opera */
+}
+
+
+/**同时设置多张图片作为不同未知的背景**/
+
+.background-more {
+    background-image: url(../images/img_flwr.gif), url(../images/paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 20px;
+    p {
+        line-height: 30px;
+    }
+}
+
+.background-clip {
+    border: 10px dotted #333;
+    padding: 15px;
+    background: #888;
+    color: #fff;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+    -o-background-clip: content-box;
+    -moz-background-clip: content-box;
+    -ms-background-clip: content-box;
+}
+
+
+/**线性渐变**/
+
+.lineGradient {
+    height: 200px;
+    background: -webkit-linear-gradient(red, green);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(red, green);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(red, green);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(red, green);
+    /* 标准的语法（必须放在最后） */
+}
+
+.gradient-left-right {
+    height: 100px;
+    background: -webkit-linear-gradient(left, red, blue);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, red, blue);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, red, blue);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, red, blue);
+    /* 标准的语法（必须放在最后） */
+}
+
+.gradient-top-bottom {
+    height: 200px;
+    background: -webkit-linear-gradient(left top, red, blue);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right, red, blue);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right, red, blue);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right, red, blue);
+    /* 标准的语法 */
 }
