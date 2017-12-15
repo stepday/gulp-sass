@@ -11,7 +11,7 @@ npm install
 在根目录下运行gulp命令打包
 
 直接打开index.html测试
-
+<pre>
 sass:原始样式文件
 css:发布后的样式文件
 node_modules:开发包目录
