@@ -1,4 +1,4 @@
-# 如何借助node和gulp工具讲SASS运用到项目中
+# 如何借助node和gulp工具将SASS运用到项目中
 
 ### 安装
 
