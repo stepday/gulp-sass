@@ -179,3 +179,79 @@ pre {
     background: linear-gradient(to bottom right, red, blue);
     /* 标准的语法 */
 }
+
+/**径向渐变**/
+.gradient-radial{
+	height: 200px;
+	width: 200px;
+	background: -webkit-repeating-radial-gradient(red,yellow 10%,green 15%);
+	background: -o-repeating-radial-gradient(red,yellow 10%,green 15%);
+	background: -moz-repeating-radial-gradient(red,yellow 10%,green 15%);
+	background: repeating-radial-gradient(red,yellow 10%,green 15%);
+}
+
+/**动画过渡**/
+.transition-hover{
+	transition:width 2s;
+	-webkit-transition:width 2s;
+	width:200px;
+	height: 80px;
+	background: #eee;
+	line-height: 80px;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+}
+.transition-hover:hover{
+	width: 400px;
+}
+
+/**综合过渡效果**/
+.transition-matrix{
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #333;
+	box-shadow: 2px 2px 3px #333;
+	margin-top: 20px;
+	-webkit-box-shadow:2px 2px 3px #333;
+	transition:width 2s,height 2s,transform 3s;
+	-webkit-transition:width 2s,height 2s,-webkit-transform 3s;
+	img{
+		height: 60px;
+		width: 60px;
+	}
+	p{
+		font-size: 12px;
+		color: #333;
+	}
+}
+.transition-matrix:hover{
+	width: 150px;
+	height: 150px;
+	transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+}
+
+.animation-box{
+	height: 100px;
+	width: 200px;
+	line-height: 100px;
+	animation:changeBg 3s;
+	-webkit-animation:changeBg 3s;
+}
+@keyframes changeBg{
+	0% {
+		background: red;
+	}
+	30% {
+		background: green;
+	}
+	60% {
+		background: blue;
+	}
+	100% {
+		background:yellow;
+	}
+}
