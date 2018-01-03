@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>酷炫按钮大集合</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style type="text/css">
+    .btn {
+        line-height: 35px;
+        width: 120px;
+        text-align: center;
+        border-radius: 5px;
+        background: #F44336;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .jump:hover {
+        animation: jump .5s 1 0s;
+        -webkit-animation: jump .5s 1 0s;
+        -moz-animation: jump .5s 1 0s;
+        -ms-animation: jump .5s 1 0s;
+        -o-animation: jump .5s 1 0s;
+    }
+
+    @keyframes jump {
+        0% {
+            transform: rotate(0deg);
+        }
+        20% {
+            transform: rotate(5deg);
+        }
+        40% {
+            transform: rotate(0deg);
+        }
+        80% {
+            transform: rotate(-5deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    @-webkit-keyframes jump {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        20% {
+            -webkit-transform: rotate(5deg);
+        }
+        40% {
+            -webkit-transform: rotate(0deg);
+        }
+        80% {
+            -webkit-transform: rotate(-5deg);
+        }
+        100% {
+            -webkit-transform: rotate(0deg);
+        }
+    }
+
+    @-moz-keyframes jump {
+        0% {
+            -moz-transform: rotate(0deg);
+        }
+        20% {
+            -moz-transform: rotate(5deg);
+        }
+        40% {
+            -moz-transform: rotate(0deg);
+        }
+        80% {
+            -moz-transform: rotate(-5deg);
+        }
+        100% {
+            -moz-transform: rotate(0deg);
+        }
+    }
+
+    @-o-keyframes jump {
+        0% {
+            -o-transform: rotate(0deg);
+        }
+        20% {
+            -o-transform: rotate(5deg);
+        }
+        40% {
+            -o-transform: rotate(0deg);
+        }
+        80% {
+            -o-transform: rotate(-5deg);
+        }
+        100% {
+            -o-transform: rotate(0deg);
+        }
+    }
+
+    .flash {
+        background: #009688;
+    }
+
+    .flash:hover {
+        animation: flash .5s 1 0s;
+        -webkit-animation: flash .5s 1 0s;
+        -moz-animation: flash .5s 1 0s;
+        -ms-animation: flash .5s 1 0s;
+        -o-animation: flash .5s 1 0s;
+    }
+
+    @keyframes flash {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.8);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @-webkit-keyframes flash {
+        0% {
+            -webkit-transform: scale(1);
+        }
+        50% {
+            -webkit-transform: scale(0.8);
+        }
+        100% {
+            -webkit-transform: scale(1);
+        }
+    }
+
+    @-moz-keyframes flash {
+        0% {
+            -moz-transform: scale(1);
+        }
+        50% {
+            -moz-transform: scale(0.8);
+        }
+        100% {
+            -moz-transform: scale(1);
+        }
+    }
+
+    @-o-keyframes flash {
+        0% {
+            -o-transform: scale(1);
+        }
+        50% {
+            -o-transform: scale(0.8);
+        }
+        100% {
+            -o-transform: scale(1);
+        }
+    }
+    /**酷炫导航**/
+
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        font-family: "兰亭黑-简";
+        list-style: none;
+        float: left;
+        line-height: 50px;
+        width: auto;
+        margin-right: 40px;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: #666565;
+        height: 45px;
+        display: inline-block;
+        position: relative;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    /*.menu li a::before {
+        content: "";
+        width: 85px;
+        height: 2px;
+        background: #ccc;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        color: #707070;
+        visibility: hidden;
+    }*/
+
+    .menu li a:after {
+        content: "";
+        width: 0px;
+        height: 2px;
+        background: #C71925;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transition: all .8s;
+    }
+
+    .menu li a:link,
+    .menu li a:visited {
+        cursor: pointer;
+    }
+
+    .menu li a.active,.menu li a:hover {
+        color: #c71925;
+        cursor: pointer;
+    }
+
+    .menu li a.active:after,.menu li a:hover:after {
+        left: 0%;
+        color: #c71925;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <h5>鼠标移入跳动效果</h5>
+    <div class="btn jump">鼠标移入跳动</div>
+    <h5>鼠标移入闪烁效果</h5>
+    <div class="btn flash">鼠标移入闪烁</div>
+    <h5>鼠标移入酷炫导航</h5>
+    <ul class="menu">
+        <li><a class="active" href="http://www.stepday.com" target="_blank">系统首页</a></li>
+        <li><a href="http://www.stepday.com" target="_blank">产品中心</a></li>
+        <li><a href="http://www.stepday.com" target="_blank">关于我们</a></li>
+        <li><a href="http://www.stepday.com" target="_blank">联系我们</a></li>
+    </ul>
+</body>
+
+</html>
